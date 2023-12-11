@@ -3,20 +3,25 @@ import './card.scss';
 
 const Card = (props) => {
 
-    const imageNme =  props.details.imageNme + '.jpg';
+    const imageNme =   props.details.imageNme + '.jpg';
+
+    const divStyle = {
+        backgroundImage:  `url(./images/${imageNme})`
+      };
 
     return (
-        <div className='card'>
-            <img src={`./images/${imageNme}`} alt=""/>
-            <div class="card-body">
-                <h5 class="card-title">
-                    <a href="#">{props.details.title}</a>
-                </h5>
-                {props.details.content?.map((item, index) => {
-                    return <p key={index}>{item}</p>
-                })}
-            </div>       
+        <div className={`blog-card ${props.details.isAlt ? 'alt'  : ''}`}>
+        <div className="meta">
+          <div className="photo" style={divStyle}></div>
         </div>
+        <div className="description">
+          <h1>{props.details.title}</h1>
+          {/* <h2>Opening a door to the future</h2> */}
+            {props.details.content?.map((item, index) => {
+                return <p key={index}>{item}</p>
+            })}        
+        </div>
+      </div>
     );
 };
 
