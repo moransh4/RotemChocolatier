@@ -1,0 +1,52 @@
+// Intro.scss
+.intro-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+  }
+  
+  .intro-image-container {
+    flex: 1;
+    overflow: hidden;
+    border-radius: 10px; /* Optional: Add border-radius for a rounded look */
+  }
+  
+  .intro-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .intro-text-container {
+    flex: 1;
+    margin-left: 20px; /* Optional: Add margin for space between image and text */
+  }
+  
+  .intro-heading {
+    font-size: 2em;
+    color: #654321; /* Dark brown color */
+    margin-bottom: 10px;
+  }
+  
+  .intro-text {
+    font-size: 1.2em;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .intro-skills {
+    font-size: 1.1em;
+    color: #555;
+  
+    ul {
+      list-style-type: square;
+      margin-left: 20px;
+      margin-bottom: 20px;
+    }
+  
+    li {
+      margin-bottom: 8px;
+    }
+  }
+  
