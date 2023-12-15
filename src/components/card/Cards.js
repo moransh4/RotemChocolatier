@@ -1,5 +1,5 @@
 import React from 'react';
-import data from '../../Data/workshops.json'
+import data from './workshops.json'
 import Card from './Card';
 import './card.scss';
 
