@@ -41,6 +41,9 @@ const Navbar = () => {
               <NavLink to='#workshops' onClick={() => scrollToSection('workshops')}>סדנאות</NavLink>
             </li>
             <li>
+              <NavLink to='#gallery' onClick={() => scrollToSection('gallery')}>גלריה</NavLink>
+            </li>
+            <li>
               <NavLink to='#contact' onClick={() => scrollToSection('contact')}>צור קשר</NavLink>
             </li>
           </ul>

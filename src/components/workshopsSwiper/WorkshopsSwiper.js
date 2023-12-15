@@ -14,7 +14,7 @@ import { EffectCoverflow, Pagination } from 'swiper/modules';
 const WorkshopsSwiper = () => {
 
     return (
-        <div className='workshops-swiper'>
+        <div className='workshops-swiper' id="gallery">
         <Swiper
         effect={'coverflow'}
         grabCursor={true}
