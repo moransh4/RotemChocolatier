@@ -3,10 +3,12 @@ import './card.scss';
 
 const Card = (props) => {
 
-    const imageNme =   props.details.imageNme + '.jpg';
+    const imageName =   props.details.imageName + '.jpg';
+    const imageUrl = `${process.env.PUBLIC_URL}/images/${imageName}`;
+
 
     const divStyle = {
-        backgroundImage:  `url(./images/${imageNme})`
+        backgroundImage:  `url(${imageUrl})`
       };
 
     return (
