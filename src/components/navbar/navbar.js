@@ -10,6 +10,14 @@ const Navbar = () => {
     setShowNavbar(!showNavbar);
   };
 
+  const scrollToSection = (sectionId) => {
+    const element = document.getElementById(sectionId);
+
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <nav className="navbar">
       <div className="container">
@@ -22,16 +30,16 @@ const Navbar = () => {
         <div className={`nav-elements  ${showNavbar && "active"}`}>
           <ul>
             <li>
-              <NavLink to="/">בית</NavLink>
+              <NavLink onClick={() => scrollToSection('header')}>בית</NavLink>
             </li>
             <li>
-              <NavLink to="/projects">סדנאות</NavLink>
+              <NavLink onClick={() => scrollToSection('workshops')}>סדנאות</NavLink>
             </li>
             <li>
-              <NavLink to="/about">אודות</NavLink>
+              <NavLink onClick={() => scrollToSection('about')}>אודות</NavLink>
             </li>
             <li>
-              <NavLink to="/contact">צור קשר</NavLink>
+              <NavLink onClick={() => scrollToSection('contact')}>צור קשר</NavLink>
             </li>
           </ul>
         </div>

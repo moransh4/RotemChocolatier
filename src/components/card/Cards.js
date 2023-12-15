@@ -6,7 +6,7 @@ import './card.scss';
 const Cards = () => {
 
     return (
-        <div className='cards'>
+        <div className='cards' id='workshops'>
             {data.map((item, index) => {
                 return <Card key={index} details={item}/>
             })}
