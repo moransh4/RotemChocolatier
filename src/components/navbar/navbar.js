@@ -35,10 +35,10 @@ const Navbar = () => {
               <NavLink to='#header' onClick={() => scrollToSection('header')}>בית</NavLink>
             </li>
             <li>
-              <NavLink to='#workshops' onClick={() => scrollToSection('workshops')}>סדנאות</NavLink>
+              <NavLink to='#about' onClick={() => scrollToSection('about')}>אודות</NavLink>
             </li>
             <li>
-              <NavLink to='#about' onClick={() => scrollToSection('about')}>אודות</NavLink>
+              <NavLink to='#workshops' onClick={() => scrollToSection('workshops')}>סדנאות</NavLink>
             </li>
             <li>
               <NavLink to='#contact' onClick={() => scrollToSection('contact')}>צור קשר</NavLink>
