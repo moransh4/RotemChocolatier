@@ -1,5 +1,5 @@
 .about {
-  background-color: #bf7741;
+  background-color: #fccc96;
   //clip-path: polygon(0 0,100% 0,100% 80%,0 100%);
   height: 100%;
   padding: 60px;
@@ -32,6 +32,7 @@
 
       @media (max-width: 768px) {
         width: 100%;
+        height: 200px;
       }
 
       .img {
@@ -50,13 +51,14 @@
       text-align: right;
       direction: rtl;
       padding-left: 20px;
-      color: white;
+      color: #463130;
       font-weight: bold;
       font-size: 20px;
 
       @media (max-width: 768px) {
         text-align: center;
         font-size: 15px;
+        padding-left: 0px;
       }
 
       .text {

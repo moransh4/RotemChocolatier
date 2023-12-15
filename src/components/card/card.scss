@@ -109,7 +109,7 @@ $color_grey_dark: #a2a2a2;
       h1 {
         line-height: 1;
         margin: 0;
-        font-size: 1.7rem;
+        font-size: 20px;
       }
       h2 {
         font-size: 1rem;
@@ -142,7 +142,9 @@ $color_grey_dark: #a2a2a2;
     }
     p {
       position: relative;
-      margin: 1rem 0 0;
+      margin: 0;
+      font-size: 15px;
+
       &:first-of-type {
         margin-top: 1.25rem;
         &:before {
