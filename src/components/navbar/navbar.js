@@ -10,11 +10,13 @@ const Navbar = () => {
     setShowNavbar(!showNavbar);
   };
 
-  const scrollToSection = (sectionId) => {
-    const element = document.getElementById(sectionId);
-
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
+  const scrollToSection = (event) => {
+    event.preventDefault(); // Prevents the default behavior of the link
+    const targetId = event.currentTarget.getAttribute('href').substring(1);
+    const targetElement = document.getElementById(targetId);
+  
+    if (targetElement) {
+      targetElement.scrollIntoView({ behavior: 'smooth' });
     }
   };
 
@@ -30,16 +32,21 @@ const Navbar = () => {
         <div className={`nav-elements  ${showNavbar && "active"}`}>
           <ul>
             <li>
-              <NavLink onClick={() => scrollToSection('header')}>בית</NavLink>
+            <a href="#header" onClick={scrollToSection}>בית</a>
+
+              {/* <NavLink onClick={() => scrollToSection('header')}>בית</NavLink> */}
             </li>
             <li>
-              <NavLink onClick={() => scrollToSection('workshops')}>סדנאות</NavLink>
+            <a href="#workshops" onClick={scrollToSection}>סדנאות</a>
+              {/* <NavLink onClick={() => scrollToSection('workshops')}>סדנאות</NavLink> */}
             </li>
             <li>
-              <NavLink onClick={() => scrollToSection('about')}>אודות</NavLink>
+            <a href="#about" onClick={scrollToSection}>אודות</a>
+              {/* <NavLink onClick={() => scrollToSection('about')}>אודות</NavLink> */}
             </li>
             <li>
-              <NavLink onClick={() => scrollToSection('contact')}>צור קשר</NavLink>
+            <a href="#contact" onClick={scrollToSection}>צור קשר</a>
+              {/* <NavLink onClick={() => scrollToSection('contact')}>צור קשר</NavLink> */}
             </li>
           </ul>
         </div>
