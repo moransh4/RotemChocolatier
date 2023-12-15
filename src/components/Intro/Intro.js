@@ -1,36 +1,25 @@
 // Intro.js
 import React from 'react';
-import { useSpring, animated } from 'react-spring';
 import './intro.scss';
-
-// Import your image (replace 'your-image.jpg' with the actual file name)
 import chocolatierImage from './images/intro.jpg';
 
 const Intro = () => {
     return (
-      <div className="intro-container">
-        <div className="intro-image-container">
-          <img src={chocolatierImage} alt="Chocolatier" className="intro-image" />
-        </div>
-  
-        <div className="intro-text-container">
-          <h1 className="intro-heading">שלום! אני [שמך], מאמן השוקולד</h1>
-          <p className="intro-text">
-            ברוכים הבאים למציאות הקסומה שלי, היכולת ליצור מתוקים מושלמים מקקאו טבעי. אני מתמחה ביצירת
-            שוקולדים בעבודת יד, מבחר טעמים ייחודיים ועיצובים יצירתיים.
-          </p>
-          <div className="intro-skills">
-            <p>כמה מתכונים לקסם שוקולדי שלי:</p>
-            <ul>
-              <li>שוקולד חמאת ברנדי לנשיאים</li>
-              <li>טראפלס בכמה גוונים וטעמים</li>
-              <li>פרלינים ממגוון קקאו ואגוזים</li>
-              <li>בומבונייר לחובבי קפה</li>
-            </ul>
+      <section className="about" id='about'>
+        <div className="content-wrapper">
+          <div className="img-wrapper">
+            <img className="img" src={chocolatierImage} alt=""/>
           </div>
-        </div>
-      </div>
-    );
-  };
+          <div className="text-wrapper">
+            {/* <h1 className="title">TITLE</h1> */}
+            <p className='text'>מאז שאני זוכרת את עצמי שוקולד היה אהבתי הגדולה.<br/>
+                עם השנים, האהבה שלי לשוקולד רק התעצמה והחלטתי להפוך אותה למקצוע.</p>
+            <p className='text'>חוויה כיפיית ומהנה שכל כולה עוסקת בשוקולד איכותי.<br/>
+                הזמן שלכם להתנתק לרגע מהיום יום ולהיכנס לעולם השוקולד שלי.</p>
+          </div>
+       </div>
+    </section>
+    )
+  }
   
   export default Intro;
