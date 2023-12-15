@@ -1,8 +1,10 @@
 const path = require("path");
-const glob = require('glob');
+// const glob = require('glob');
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const shell = require('shelljs');
+const glob = require('glob');
+
 
 
 module.exports = {
@@ -18,12 +20,14 @@ module.exports = {
       template: "src/index.html", // to import index.html file inside index.js
     }),
     new CopyWebpackPlugin({
-      patterns: glob.sync('src/components/**/images/**/*').map((file) => {
-        return {
-          from: file,
-          to: 'images',
-        };
-      }),
+      patterns: [
+        {
+          from: 'src/components/**/images/*',
+          to: 'public/images',
+          flatten: true,
+          noErrorOnMissing: true,
+        },
+      ],
     }),
   ],
   plugins: [
