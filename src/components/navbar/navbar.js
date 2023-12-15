@@ -25,16 +25,13 @@ const Navbar = () => {
               <NavLink to="/">בית</NavLink>
             </li>
             <li>
-              <NavLink to="/blogs">Blogs</NavLink>
+              <NavLink to="/projects">סדנאות</NavLink>
             </li>
             <li>
-              <NavLink to="/projects">Projects</NavLink>
+              <NavLink to="/about">אודות</NavLink>
             </li>
             <li>
-              <NavLink to="/about">About</NavLink>
-            </li>
-            <li>
-              <NavLink to="/contact">Contact</NavLink>
+              <NavLink to="/contact">צור קשר</NavLink>
             </li>
           </ul>
         </div>
