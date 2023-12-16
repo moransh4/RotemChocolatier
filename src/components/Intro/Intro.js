@@ -1,7 +1,7 @@
 // Intro.js
 import React from 'react';
 import './intro.scss';
-import chocolatierImage from './images/intro.jpg';
+import chocolatierImage from './images/rotem.jpg';
 
 const Intro = () => {
     return (
