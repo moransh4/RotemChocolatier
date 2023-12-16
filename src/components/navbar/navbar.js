@@ -30,7 +30,7 @@ const Navbar = () => {
         <div className="menu-icon" onClick={handleShowNavbar}>
           <Hamburger />
         </div>
-        <div className={`nav-elements  ${showNavbar && "active"}`}>
+        <div className={`nav-elements  ${showNavbar ? "active" : ''}`}>
           <ul>
             <li>
               <NavLink to='/' onClick={() => scrollToSection('header')}>בית</NavLink>
