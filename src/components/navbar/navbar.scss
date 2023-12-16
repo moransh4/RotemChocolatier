@@ -1,40 +1,40 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
 
 
-.container {
-  margin: 0 auto;
-  padding: 0 15px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 100%;
-  overflow: hidden;
-}
-
 .navbar {
   height: 60px;
   background-color: #fffbf2;
   position: sticky;
   top: 0;
   z-index: 10;
+
+
+  .container {
+    margin: 0 auto;
+    padding: 0 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    overflow: hidden;
+  }
 }
 
 .logo {
-    width: 160px;
+  width: 160px;
 
-    img {
-        display: block;
-        height: 100%;
-        width: 80%;
-    }
+  img {
+    display: block;
+    height: 100%;
+    width: 80%;
+  }
 }
 
 .menu-icon {
   display: none;
 }
 
-.nav-elements {
-}
+.nav-elements {}
 
 .nav-elements ul {
   display: flex;
@@ -42,11 +42,17 @@
   list-style-type: none;
   direction: rtl;
   gap: 40px;
+
+  @media (max-width: 750px) {
+    gap: 20px;
+    padding-right: 0;
+  }
+
   @media (max-width: 600px) {
     gap: 0px;
-
+    padding-right: 20px;
   }
-  
+
 }
 
 .nav-elements ul {

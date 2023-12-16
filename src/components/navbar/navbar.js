@@ -14,6 +14,7 @@ const Navbar = () => {
     const element = document.getElementById(sectionId);
 
     if (element) {
+      setShowNavbar(false);
       const newPosition = element.getBoundingClientRect().top + window.scrollY - 60;
       window.scrollTo({ top: newPosition, behavior: 'smooth' });
       // element.scrollIntoView({ behavior: 'smooth', block: 'start', inline: 'nearest'  });
