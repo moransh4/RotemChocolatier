@@ -1,5 +1,5 @@
 .about {
-  background-color: #fffbf2;
+  background-color: #d1a666;
   //clip-path: polygon(0 0,100% 0,100% 80%,0 100%);
   height: 100%;
   padding: 60px;
@@ -27,11 +27,11 @@
 
 
     .img-wrapper {
-      width: 50%;
-      height: 300px;
+      width: 400px;
+      height: 400px;
 
       @media (max-width: 768px) {
-        width: 100%;
+        width: 200px;
         height: 200px;
       }
 
@@ -43,6 +43,7 @@
         object-position: center; // You can adjust this based on your preference
         background-size: contain;
         background-repeat: no-repeat;
+        border-radius: 50%;
       }
     }
 
@@ -51,7 +52,7 @@
       text-align: right;
       direction: rtl;
       padding-left: 20px;
-      color: #463130;
+      color: white;
       font-weight: bold;
       font-size: 20px;
 

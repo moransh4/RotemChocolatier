@@ -32,7 +32,7 @@ const Navbar = () => {
         <div className={`nav-elements  ${showNavbar && "active"}`}>
           <ul>
             <li>
-              <NavLink to='#header' onClick={() => scrollToSection('header')}>בית</NavLink>
+              <NavLink to='/' onClick={() => scrollToSection('header')}>בית</NavLink>
             </li>
             <li>
               <NavLink to='#about' onClick={() => scrollToSection('about')}>אודות</NavLink>
@@ -42,6 +42,9 @@ const Navbar = () => {
             </li>
             <li>
               <NavLink to='#gallery' onClick={() => scrollToSection('gallery')}>גלריה</NavLink>
+            </li>
+            <li>
+            <NavLink to='#reviews' onClick={() => scrollToSection('reviews')}>המלצות</NavLink>
             </li>
             <li>
               <NavLink to='#contact' onClick={() => scrollToSection('contact')}>צור קשר</NavLink>

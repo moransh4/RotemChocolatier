@@ -1,0 +1,28 @@
+.reviews{
+    margin: 30px 15px 30px 15px;
+    @media (max-width: 600px) {
+        margin: 50px 15px 50px 15px;
+    }
+    .reviews-swiper{
+        .review{
+            display: flex;
+            flex-direction: row-reverse;
+            text-align: right;
+            height: 100%;
+            background-color: #d1a666;
+            padding: 15px;
+
+            .quote{
+                color:#715223;
+            }
+            .content{
+                padding-right: 15px;
+                text-align: right;
+                direction: rtl;
+                .reviewer-name{
+                    display: block;
+                }
+            }
+        }
+    }
+}

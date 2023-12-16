@@ -14,7 +14,7 @@ import { EffectCoverflow, Pagination } from 'swiper/modules';
 const WorkshopsSwiper = () => {
 
     return (
-        <div className='workshops-swiper' id="gallery">
+        <div className='workshops' id="gallery">
         <Swiper
         effect={'coverflow'}
         grabCursor={true}
@@ -44,7 +44,7 @@ const WorkshopsSwiper = () => {
         }}
         pagination={false}
         modules={[EffectCoverflow, Pagination]}
-        className="mySwiper"
+        className="workshops-swiper"
       >
            {data.map((item, index) => {
                const imageName =   item.imageName + '.jpg';

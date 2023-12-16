@@ -1,8 +1,11 @@
-.workshops-swiper{
-    padding: 50px 0 ;
+.workshops{
+    padding: 50px 0 50px 0 ;
     width: 100%;
     overflow: hidden;
-    .swiper{
+    @media (max-width: 600px) {
+      padding: 30px 0 30px 0;
+    }
+    .workshops-swiper{
       overflow: visible;
       .swiper-slide {
         background-position: center;
