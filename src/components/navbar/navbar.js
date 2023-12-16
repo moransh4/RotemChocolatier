@@ -14,6 +14,7 @@ const Navbar = () => {
     const element = document.getElementById(sectionId);
 
     if (element) {
+      setShowNavbar(false);
       const newPosition = element.getBoundingClientRect().top + window.scrollY - 60;
       window.scrollTo({ top: newPosition, behavior: 'smooth' });
       // element.scrollIntoView({ behavior: 'smooth', block: 'start', inline: 'nearest'  });
@@ -29,7 +30,7 @@ const Navbar = () => {
         <div className="menu-icon" onClick={handleShowNavbar}>
           <Hamburger />
         </div>
-        <div className={`nav-elements  ${showNavbar && "active"}`}>
+        <div className={`nav-elements  ${showNavbar ? "active" : ''}`}>
           <ul>
             <li>
               <NavLink to='/' onClick={() => scrollToSection('header')}>בית</NavLink>

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import data from './workshopsSwiper.json'
-import './workshopsSwiper.scss';
+import data from './gallery.json'
+import './gallery.scss';
 
 // Import Swiper styles
 import 'swiper/css';
@@ -11,7 +11,7 @@ import 'swiper/css/pagination';
 // import required modules
 import { EffectCoverflow, Pagination } from 'swiper/modules';
 
-const WorkshopsSwiper = () => {
+const Gallery = () => {
 
     return (
         <div className='workshops' id="gallery">
@@ -29,15 +29,12 @@ const WorkshopsSwiper = () => {
           slideShadows: true,
         }}
         breakpoints = {{
-          // when window width is >= 200px
           200: {
             slidesPerView: 1.3,
           },
-          // when window width is >= 480px
           480: {
             slidesPerView: 2,
           },
-          // when window width is >= 768px
           768: {
             slidesPerView: 3,
           },
@@ -59,4 +56,4 @@ const WorkshopsSwiper = () => {
     );
 };
 
-export default WorkshopsSwiper;
+export default Gallery;
