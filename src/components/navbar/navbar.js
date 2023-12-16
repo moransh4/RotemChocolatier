@@ -32,7 +32,7 @@ const Navbar = () => {
         <div className={`nav-elements  ${showNavbar && "active"}`}>
           <ul>
             <li>
-              <NavLink to='#header' onClick={() => scrollToSection('header')}>בית</NavLink>
+              <NavLink to='/' onClick={() => scrollToSection('header')}>בית</NavLink>
             </li>
             <li>
               <NavLink to='#about' onClick={() => scrollToSection('about')}>אודות</NavLink>
