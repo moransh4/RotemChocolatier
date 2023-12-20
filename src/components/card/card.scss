@@ -185,6 +185,13 @@ $color_grey_dark: #a2a2a2;
           bottom: 0;
           z-index: -1;
         }
+
+        h1{
+          font-size: 25px;
+        }
+        p{
+          font-size: 18px;
+        }
       }
       &.alt {
         flex-direction: row-reverse;
