@@ -7,7 +7,7 @@ const Header = () => {
         <div className='header' id='header'>
             <div className='background'>
                 <div className='title'>
-                <h1>רותם שרעבי שוקולטרית</h1>
+                <h1>רותם שרעבי שוקולטיירית</h1>
                 <h2>מתמחה בסדנאות שוקולד מקצועיות, מארזי שוקולד יוקרתיים בעבודת יד.</h2>
                 </div>
             </div>

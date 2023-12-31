@@ -12,7 +12,7 @@ return (<div className="page">
         <Header/>
         <Intro/>
         <Cards/>
-        <Gallery/>
+        <Gallery id="home"/>
         <Reviews/>
         <Footer/>
     </div>)

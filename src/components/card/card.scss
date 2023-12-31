@@ -20,9 +20,12 @@ $color_grey_dark: #a2a2a2;
     z-index: 0;
     min-height: 300px;
     a {
-      color: inherit;
+      //color: inherit;
+      color: #4a3432;
+      font-weight: bolder;
+
       &:hover {
-        color: $color_prime;
+        // color: $color_prime;
       }
     }
     &:hover {
