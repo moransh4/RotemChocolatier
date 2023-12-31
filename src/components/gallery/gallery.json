@@ -1,34 +1,62 @@
-
-[{
-    "imageName": "workshop1"
-},
 {
-    "imageName": "workshop2"
-},
-{
-    "imageName": "workshop3"
-},
-{
-    "imageName": "workshop4"
-},
-{
-    "imageName": "workshop5"
-},
-{
-    "imageName": "workshop6"
-},
-{
-    "imageName": "workshop7"
-},
-{
-    "imageName": "workshop8"
-},
-{
-    "imageName": "workshop9"
-},
-{
-    "imageName": "workshop10"
-},
-{
-    "imageName": "workshop11"
-}]
+    "home": [
+        {
+            "imageName": "workshop1"
+        },
+        {
+            "imageName": "workshop2"
+        },
+        {
+            "imageName": "workshop3"
+        },
+        {
+            "imageName": "workshop4"
+        },
+        {
+            "imageName": "workshop5"
+        },
+        {
+            "imageName": "workshop6"
+        },
+        {
+            "imageName": "workshop7"
+        },
+        {
+            "imageName": "workshop8"
+        },
+        {
+            "imageName": "workshop9"
+        },
+        {
+            "imageName": "workshop10"
+        },
+        {
+            "imageName": "workshop11"
+        }
+    ],
+    "children": [
+        {
+            "imageName": "children1"
+        },
+        {
+            "imageName": "children2"
+        },
+        {
+            "imageName": "children3"
+        },
+        {
+            "imageName": "children4"
+        }  
+    ],
+    "work": [
+        {
+            "imageName": "workteam1"
+        },
+        {
+            "imageName": "workteam2"
+        },
+        {
+            "imageName": "workteam3"
+        }  
+    ]
+}

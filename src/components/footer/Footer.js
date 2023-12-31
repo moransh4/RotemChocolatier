@@ -11,8 +11,8 @@ const Footer = () => {
       <div className="footer-content">
         <div className="contact-info">
           <h3>צור קשר</h3>
-          <p>דוא"ל: Rotemfri1@gmail.com</p>
-          <p>טלפון: 050-471-1139</p> 
+          <p>Rotemfri1@gmail.com</p>
+          <p>050-471-1139</p> 
         </div>
         <div className="social-icons">
         <a href="https://instagram.com/rotem_sharabi2?igshid=NGExMmI2YTkyZg==" target="_blank" rel="noopener noreferrer">

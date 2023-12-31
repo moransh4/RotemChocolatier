@@ -1,16 +1,34 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import './navbar.scss';
 import logo from './images/my-logo.jpg';
+import SubMenu from './SubMenu';
 
 const Navbar = () => {
-  const [showNavbar, setShowNavbar] = React.useState(false);
+  const [showNavbar, setShowNavbar] = useState(false);
+  const [openMenueID , setOpenMenueID] = useState(null);
 
   const handleShowNavbar = () => {
     setShowNavbar(!showNavbar);
   };
 
+  const closeSubMenu  = (name) => {
+    setOpenMenueID(null);
+    handleShowNavbar();
+  };
+
+  const OpenSubMenueHandler = (name) => {
+    if(openMenueID === name){
+      setOpenMenueID(null);
+    }
+    else{
+      setOpenMenueID(name);
+    }
+  };
+
   const scrollToSection = (sectionId) => {
+    setOpenMenueID(null);
+    handleShowNavbar();
     const element = document.getElementById(sectionId);
 
     if (element) {
@@ -36,19 +54,21 @@ const Navbar = () => {
               <NavLink to='/' onClick={() => scrollToSection('header')}>בית</NavLink>
             </li>
             <li>
-              <NavLink to='#about' onClick={() => scrollToSection('about')}>אודות</NavLink>
+              <NavLink to='/#about' onClick={() => scrollToSection('about')}>אודות</NavLink>
             </li>
             <li>
-              <NavLink to='#workshops' onClick={() => scrollToSection('workshops')}>סדנאות</NavLink>
+              <NavLink to='/#workshops' onClick={() => scrollToSection('workshops')}>סדנאות</NavLink>
+              {/* <NavLink to='/#workshops' onClick={() => OpenSubMenueHandler('workshops') }>סדנאות</NavLink>
+              <SubMenu isActive={openMenueID === 'workshops'} onClick={closeSubMenu} name={"workshops"}/> */}
             </li>
             <li>
-              <NavLink to='#gallery' onClick={() => scrollToSection('gallery')}>גלריה</NavLink>
+              <NavLink to='/#gallery' onClick={() => scrollToSection('gallery')}>גלריה</NavLink>
             </li>
             <li>
-            <NavLink to='#reviews' onClick={() => scrollToSection('reviews')}>המלצות</NavLink>
+            <NavLink to='/#reviews' onClick={() => scrollToSection('reviews')}>המלצות</NavLink>
             </li>
             <li>
-              <NavLink to='#contact' onClick={() => scrollToSection('contact')}>צור קשר</NavLink>
+              <NavLink to='/#contact' onClick={() => scrollToSection('contact')}>צור קשר</NavLink>
             </li>
           </ul>
         </div>

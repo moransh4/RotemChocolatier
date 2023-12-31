@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './card.scss';
 
 const Card = (props) => {
@@ -21,7 +22,8 @@ const Card = (props) => {
           {/* <h2>Opening a door to the future</h2> */}
             {props.details.content?.map((item, index) => {
                 return <p key={index}>{item}</p>
-            })}        
+            })}
+            {/* <Link to={props.details.moreInfoLink}>לפרטים נוספים לחץ כאן</Link>      */}
         </div>
       </div>
     );

@@ -1,0 +1,11 @@
+
+{
+    "workshops": {
+      "links": [
+      {"to": "/workshops/children" , "name": "סדנאות לילדים"},
+      {"to": "/workshops/chocolate" , "name": "סדנת שוקולד"},
+      {"to": "/workshops/double" , "name": "סדנה זוגית"},
+      {"to": "/workshops/family" , "name": "סדנת משפחתית"},
+      {"to": "/workshops/work" , "name": "סדנת שוקולד גיבוש צוות ועובדים"}]
+    }
+  }

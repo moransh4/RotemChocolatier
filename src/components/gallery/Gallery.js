@@ -11,7 +11,8 @@ import 'swiper/css/pagination';
 // import required modules
 import { EffectCoverflow, Pagination } from 'swiper/modules';
 
-const Gallery = () => {
+const Gallery = (props) => {
+  console.log(props.id);
 
     return (
         <div className='workshops' id="gallery">
@@ -43,10 +44,11 @@ const Gallery = () => {
         modules={[EffectCoverflow, Pagination]}
         className="workshops-swiper"
       >
-           {data.map((item, index) => {
+           {data[props.id]?.map((item, index) => {
                const imageName =   item.imageName + '.jpg';
                const imageUrl = `${process.env.PUBLIC_URL}/images/${imageName}`;
                const divStyle = {backgroundImage:  `url(${imageUrl})`};
+               console.log(imageUrl);
                 return ( <SwiperSlide  key={index}>
                     <div className="photo" style={divStyle}></div>
                   </SwiperSlide>)
