@@ -23,7 +23,7 @@ const Card = (props) => {
             {props.details.content?.map((item, index) => {
                 return <p key={index}>{item}</p>
             })}
-            {/* <Link to={props.details.moreInfoLink}>לפרטים נוספים לחץ כאן</Link>      */}
+            <Link to={props.details.moreInfoLink}>לפרטים נוספים לחץ כאן</Link>     
         </div>
       </div>
     );
