@@ -12,7 +12,6 @@ import 'swiper/css/pagination';
 import { EffectCoverflow, Pagination } from 'swiper/modules';
 
 const Gallery = (props) => {
-  console.log(props.id);
 
     return (
         <div className='workshops' id="gallery">

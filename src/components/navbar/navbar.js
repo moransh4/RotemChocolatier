@@ -62,6 +62,9 @@ const Navbar = () => {
               <SubMenu isActive={openMenueID === 'workshops'} onClick={closeSubMenu} name={"workshops"}/> */}
             </li>
             <li>
+              <NavLink to='/workshop/handmade' onClick={() => scrollToSection('handmade')}>עבודת יד</NavLink>
+            </li>
+            <li>
               <NavLink to='/#gallery' onClick={() => scrollToSection('gallery')}>גלריה</NavLink>
             </li>
             <li>

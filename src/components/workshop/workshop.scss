@@ -6,6 +6,7 @@ $slant-degree: -10deg;
     .slanted-container {
         display: flex;
         overflow: hidden;
+        min-height: 500px;
         @media (max-width: 700px) {
          flex-direction: column;
          display: block;

@@ -58,5 +58,61 @@
         {
             "imageName": "workteam3"
         }  
+    ],
+    "chocolate": [
+        {
+            "imageName": "chocolate1"
+        },
+        {
+            "imageName": "chocolate2"
+        },
+        {
+            "imageName": "chocolate3"
+        },
+        {
+            "imageName": "chocolate4"
+        },
+        {
+            "imageName": "chocolate5"
+        },
+        {
+            "imageName": "chocolate6"
+        }  
+    ],
+    "couple": [
+        {
+            "imageName": "workshop4"
+        },
+        {
+            "imageName": "workshop8"
+        },
+        {
+            "imageName": "couple1"
+        } 
+    ],
+    "family": [
+        {
+            "imageName": "workshop3"
+        },
+        {
+            "imageName": "chocolate6"
+        },
+        {
+            "imageName": "chocolate7"
+        } 
+    ],
+    "handmade": [
+        {
+            "imageName": "handmade1"
+        },
+        {
+            "imageName": "handmade2"
+        },
+        {
+            "imageName": "handmade3"
+        },
+        {
+            "imageName": "handmade4"
+        }
     ]
 }
