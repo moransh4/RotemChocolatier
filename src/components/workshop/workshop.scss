@@ -18,8 +18,8 @@ $slant-degree: -10deg;
         /* Adjust the percentage as needed */
         background-color: #232E39;
         color: white;
-        transform: skewX($slant-degree);
-        transform-origin: top left;
+        // transform: skewX($slant-degree);
+        // transform-origin: top left;
         //padding: 20px;
         /* Adjust padding as needed */
         box-sizing: border-box;
