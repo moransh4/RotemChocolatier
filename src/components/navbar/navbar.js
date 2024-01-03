@@ -26,7 +26,20 @@ const Navbar = () => {
     }
   };
 
-  const scrollToSection = (sectionId) => {
+  function goToHomePage(){
+    window.location = window.location.origin;
+
+  }
+
+  let delay = ( function() {
+    var timer = 0;
+    return function(callback, ms) {
+        clearTimeout (timer);
+        timer = setTimeout(callback, ms);
+    };
+})();
+
+  const  scrollToSection = async (sectionId) => {
     setOpenMenueID(null);
     handleShowNavbar();
     const element = document.getElementById(sectionId);
@@ -37,12 +50,22 @@ const Navbar = () => {
       window.scrollTo({ top: newPosition, behavior: 'smooth' });
       // element.scrollIntoView({ behavior: 'smooth', block: 'start', inline: 'nearest'  });
     }
+    else{
+
+      delay(function(){
+        const element = document.getElementById(sectionId);
+        const newPosition = element?.getBoundingClientRect().top + window.scrollY - 60;
+        window.scrollTo({ top: newPosition, behavior: 'smooth' });
+    }, 500 );
+
+
+    }
   };
 
   return (
     <nav className="navbar">
       <div className="container">
-        <div className="logo">
+        <div className="logo" onClick={goToHomePage}>
           <img src={logo} alt=''/>
         </div>
         <div className="menu-icon" onClick={handleShowNavbar}>

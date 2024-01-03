@@ -14,7 +14,7 @@ import { EffectCoverflow, Pagination } from 'swiper/modules';
 const Gallery = (props) => {
 
     return (
-        <div className='workshops' id="gallery">
+        <div className='workshops-gallery'  {...(props.id == "home" && { id: "gallery" })}>
         <Swiper
         effect={'coverflow'}
         grabCursor={true}
@@ -47,7 +47,6 @@ const Gallery = (props) => {
                const imageName =   item.imageName + '.jpg';
                const imageUrl = `${process.env.PUBLIC_URL}/images/${imageName}`;
                const divStyle = {backgroundImage:  `url(${imageUrl})`};
-               console.log(imageUrl);
                 return ( <SwiperSlide  key={index}>
                     <div className="photo" style={divStyle}></div>
                   </SwiperSlide>)
