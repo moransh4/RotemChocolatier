@@ -20,6 +20,7 @@
 
     .logo {
       width: 160px;
+      cursor: pointer;
 
       img {
         display: block;
@@ -52,7 +53,7 @@
         overflow: hidden;
 
         &.active {
-          height: 310px;
+          height: 350px;
         }
       }
 
@@ -63,10 +64,16 @@
         direction: rtl;
         gap: 40px;
 
-        @media (max-width: 750px) {
-          gap: 20px;
+        @media (max-width: 790px) {
+          gap: 15px;
           padding-right: 0;
         }
+
+        // @media (max-width: 750px) {
+        //   gap: 10px;
+        //   padding-right: 0;
+        // }
+
 
         @media (max-width: 600px) {
           display: flex;
