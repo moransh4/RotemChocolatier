@@ -26,18 +26,13 @@ const Navbar = () => {
     }
   };
 
-  function goToHomePage(){
-    window.location = window.location.origin;
-
-  }
-
   let delay = ( function() {
     var timer = 0;
     return function(callback, ms) {
         clearTimeout (timer);
         timer = setTimeout(callback, ms);
     };
-})();
+  })();
 
   const  scrollToSection = async (sectionId) => {
     setOpenMenueID(null);
@@ -65,9 +60,9 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <div className="container">
-        <div className="logo" onClick={goToHomePage}>
+        <NavLink to='/' className="logo" onClick={() => scrollToSection('header')}>
           <img src={logo} alt=''/>
-        </div>
+        </NavLink>
         <div className="menu-icon" onClick={handleShowNavbar}>
           <Hamburger />
         </div>
