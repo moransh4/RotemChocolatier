@@ -29,13 +29,14 @@ module.exports = {
         },
       ],
     }),
-  ],
-  plugins: [
     function () {
       this.hooks.done.tap('FlattenDirectoryStructure', () => {
         shell.exec('cd public/images && mv !(images) .. && rmdir images');
       });
     },
+    new ShellPlugin({
+      onBuildEnd: ['node sitemap-generator.js'],
+    }),
   ],
   resolve: {
     extensions: ['.js', '.jsx'],

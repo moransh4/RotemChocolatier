@@ -19,18 +19,20 @@
     "react-router-dom": "^6.18.0",
     "react-scripts": "5.0.1",
     "react-spring": "^9.7.3",
+    "sitemap": "^7.1.1",
     "swiper": "^11.0.5",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start:dev": "set NODE_ENV=development node setHomepage.js &&  react-scripts start",
+    "start": "set NODE_ENV=development node setHomepage.js &&  react-scripts start",
     "build": "set NODE_ENV=qa node setHomepage.js && react-scripts build",
     "build:prod": "cross-env NODE_ENV=production node \"setHomepage.js\" && react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
-    "merge": "git merge main"
+    "merge": "git merge main",
+    "generate-sitemap": "node sitemap-generator.js"
   },
   "eslintConfig": {
     "extends": [
@@ -52,7 +54,8 @@
   },
   "devDependencies": {
     "@babel/core": "^7.23.5",
-    "@babel/preset-env": "^7.23.5",
+    "@babel/node": "^7.22.19",
+    "@babel/preset-env": "^7.23.7",
     "@babel/preset-react": "^7.23.3",
     "copy-webpack-plugin": "^11.0.0",
     "copyfiles": "^2.4.1",
@@ -70,6 +73,7 @@
     "url-loader": "^4.1.1",
     "webpack": "^5.89.0",
     "webpack-cli": "^5.1.4",
-    "webpack-dev-server": "^4.15.1"
+    "webpack-dev-server": "^4.15.1",
+    "webpack-shell-plugin": "^0.5.0"
   }
 }
