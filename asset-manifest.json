@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/RotemChocolatier/static/css/main.0b88cdbf.css",
-    "main.js": "/RotemChocolatier/static/js/main.eeb27077.js",
+    "main.js": "/RotemChocolatier/static/js/main.99906ba6.js",
     "static/js/787.84151079.chunk.js": "/RotemChocolatier/static/js/787.84151079.chunk.js",
     "static/media/background.jpg": "/RotemChocolatier/static/media/background.ca54bc1aaf445514b23c.jpg",
     "static/media/fa-solid-900.ttf": "/RotemChocolatier/static/media/fa-solid-900.45a265d0f07b31cde85f.ttf",
@@ -16,11 +16,11 @@
     "static/media/fa-v4compatibility.woff2": "/RotemChocolatier/static/media/fa-v4compatibility.b3049b13a93f07e026fc.woff2",
     "index.html": "/RotemChocolatier/index.html",
     "main.0b88cdbf.css.map": "/RotemChocolatier/static/css/main.0b88cdbf.css.map",
-    "main.eeb27077.js.map": "/RotemChocolatier/static/js/main.eeb27077.js.map",
+    "main.99906ba6.js.map": "/RotemChocolatier/static/js/main.99906ba6.js.map",
     "787.84151079.chunk.js.map": "/RotemChocolatier/static/js/787.84151079.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.0b88cdbf.css",
-    "static/js/main.eeb27077.js"
+    "static/js/main.99906ba6.js"
   ]
 }
