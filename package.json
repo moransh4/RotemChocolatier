@@ -1,9 +1,5 @@
 {
-<<<<<<< HEAD
-  "homepage": "https://rotem-chocolate.co.il",
-=======
   "homepage": "https://moransh4.github.io/RotemChocolatier",
->>>>>>> main
   "name": "chocolatier",
   "version": "0.1.0",
   "private": true,
