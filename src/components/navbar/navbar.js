@@ -12,7 +12,7 @@ const Navbar = () => {
     setShowNavbar(!showNavbar);
   };
 
-  const closeSubMenu  = (name) => {
+  const closeSubMenu  = () => {
     setOpenMenueID(null);
     handleShowNavbar();
   };
@@ -80,7 +80,7 @@ const Navbar = () => {
               <SubMenu isActive={openMenueID === 'workshops'} onClick={closeSubMenu} name={"workshops"}/> */}
             </li>
             <li>
-              <NavLink to='/workshop/pralines'>פרלינים</NavLink>
+              <NavLink to='/workshop/pralines' onClick={() => closeSubMenu()}>פרלינים</NavLink>
             </li>
             <li>
               <NavLink to='/#gallery' onClick={() => scrollToSection('gallery')}>גלריה</NavLink>
