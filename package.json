@@ -1,5 +1,9 @@
 {
+<<<<<<< HEAD
   "homepage": "https://rotem-chocolate.co.il",
+=======
+  "homepage": "https://moransh4.github.io/RotemChocolatier",
+>>>>>>> main
   "name": "chocolatier",
   "version": "0.1.0",
   "private": true,
@@ -27,8 +31,6 @@
     "start": "set NODE_ENV=development node setHomepage.js &&  react-scripts start",
     "build": "cross-env NODE_ENV=qa node \"setHomepage.js\" && react-scripts build",
     "build:prod": "cross-env NODE_ENV=production node \"setHomepage.js\" && react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
     "merge": "git merge main",
