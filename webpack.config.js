@@ -23,11 +23,18 @@ module.exports = {
       patterns: [
         {
           from: 'src/components/**/images/*',
-          to: 'public/images',
-          flatten: true,
-          noErrorOnMissing: true,
+          to: 'public/images/[name].[ext]'
         },
       ],
+    }),
+    new HtmlWebpackPlugin({
+      template: "src/index.html",
+      meta: {
+        foo: {
+          property: "google-site-verification",
+          content: "RLeBiTs7jf4F5_N8MEa6cPVFCw5gfo4Cf7W7Y5mSnhw"
+        }
+      }
     }),
     function () {
       this.hooks.done.tap('FlattenDirectoryStructure', () => {
