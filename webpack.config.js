@@ -27,15 +27,6 @@ module.exports = {
         },
       ],
     }),
-    new HtmlWebpackPlugin({
-      template: "src/index.html",
-      meta: {
-        foo: {
-          property: "google-site-verification",
-          content: "RLeBiTs7jf4F5_N8MEa6cPVFCw5gfo4Cf7W7Y5mSnhw"
-        }
-      }
-    }),
     function () {
       this.hooks.done.tap('FlattenDirectoryStructure', () => {
         shell.exec('cd public/images && mv !(images) .. && rmdir images');
