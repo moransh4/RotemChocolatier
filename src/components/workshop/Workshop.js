@@ -3,8 +3,6 @@ import workshop from './workshops.json';
 import './workshop.scss';
 
 const Workshop = (props) => {
-  console.log(workshop[props.id].imageName);
-
   const imageName =   workshop[props.id].imageName + '.jpg';
   const imageUrl = `${process.env.PUBLIC_URL}/images/${imageName}`;
 

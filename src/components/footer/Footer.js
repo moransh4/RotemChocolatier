@@ -12,7 +12,7 @@ const Footer = () => {
         <div className="contact-info">
           <h3>צור קשר</h3>
           <p>Rotemfri1@gmail.com</p>
-          <p>050-471-1139</p> 
+          <p>050-4711139</p> 
         </div>
         <div className="social-icons">
         <a href="https://instagram.com/rotem_sharabi2?igshid=NGExMmI2YTkyZg==" target="_blank" rel="noopener noreferrer">
