@@ -7,9 +7,10 @@ import './gallery.scss';
 import 'swiper/css';
 import 'swiper/css/effect-coverflow';
 import 'swiper/css/pagination';
+import 'swiper/css/navigation';
 
 // import required modules
-import { EffectCoverflow, Pagination } from 'swiper/modules';
+import { EffectCoverflow, Pagination, Navigation } from 'swiper/modules';
 
 const Gallery = (props) => {
 
@@ -21,6 +22,10 @@ const Gallery = (props) => {
         centeredSlides={true}
         centeredSlidesBounds={true}
         loop={true}
+        navigation={{
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        }}
         coverflowEffect={{
           rotate: 50,
           stretch: 0,
@@ -40,9 +45,12 @@ const Gallery = (props) => {
           },
         }}
         pagination={false}
-        modules={[EffectCoverflow, Pagination]}
+        modules={[EffectCoverflow, Pagination, Navigation]}
         className="workshops-swiper"
       >
+        <div className="swiper-button-next"></div>
+        <div className="swiper-button-prev"></div>
+
            {data[props.id]?.map((item, index) => {
                const imageName =   item.imageName + '.jpg';
                const imageUrl = `${process.env.PUBLIC_URL}/images/${imageName}`;

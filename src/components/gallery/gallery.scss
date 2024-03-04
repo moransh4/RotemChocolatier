@@ -7,7 +7,14 @@
     }
     .workshops-swiper{
       overflow: visible;
-      .swiper-slide {
+      .swiper-button-next{
+        color: #d1a666;;
+
+      }
+      .swiper-button-prev{
+        color: #d1a666;;
+      }
+        .swiper-slide {
         background-position: center;
         background-size: cover;
         width: 300px;
@@ -25,6 +32,7 @@
           height: 100%;
         }
       }
+
     }
 
       
