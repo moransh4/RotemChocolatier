@@ -103,22 +103,31 @@
     ],
     "pralines": [
         {
-            "imageName": "handmade1"
+            "imageName": "pralines1"
         },
         {
-            "imageName": "handmade2"
+            "imageName": "pralines2"
         },
         {
-            "imageName": "handmade3"
+            "imageName": "pralines3"
         },
         {
-            "imageName": "handmade4"
+            "imageName": "pralines4"
         },
         {
-            "imageName": "handmade5"
+            "imageName": "pralines5"
         },
         {
-            "imageName": "handmade6"
+            "imageName": "pralines6"
+        },
+        {
+            "imageName": "pralines7"
+        },
+        {
+            "imageName": "pralines8"
+        },
+        {
+            "imageName": "pralines9"
         }
     ]
 }
