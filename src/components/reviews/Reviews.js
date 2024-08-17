@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faQuoteRight } from '@fortawesome/free-solid-svg-icons'; // Example solid icon
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -14,26 +14,26 @@ import 'swiper/css/pagination';
 import { Pagination } from 'swiper/modules';
 
 const Reviews = () => {
-  const [iconSize, setIconSize] = useState(50); // Initial icon size
+  // const [iconSize, setIconSize] = useState(50); // Initial icon size
+  const iconSize = 50;
+  // const handleResize = () => {
+  //   // Update icon size based on window width
+  //   const newSize = window.innerWidth > 768 ? 2 : 1;
+  //   setIconSize(newSize);
+  // };
 
-  const handleResize = () => {
-    // Update icon size based on window width
-    const newSize = window.innerWidth > 768 ? 2 : 1;
-    setIconSize(newSize);
-  };
+  // useEffect(() => {
+  //   // Initial setup
+  //   handleResize();
 
-  useEffect(() => {
-    // Initial setup
-    handleResize();
+  //   // Add event listener for window resize
+  //   window.addEventListener('resize', handleResize);
 
-    // Add event listener for window resize
-    window.addEventListener('resize', handleResize);
-
-    // Clean up event listener on component unmount
-    return () => {
-      window.removeEventListener('resize', handleResize);
-    };
-  }, []);
+  //   // Clean up event listener on component unmount
+  //   return () => {
+  //     window.removeEventListener('resize', handleResize);
+  //   };
+  // }, []);
 
     return (
         <div className='reviews' id="reviews">

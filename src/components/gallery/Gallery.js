@@ -15,7 +15,7 @@ import { EffectCoverflow, Pagination, Navigation } from 'swiper/modules';
 const Gallery = (props) => {
 
     return (
-        <div className='workshops-gallery'  {...(props.id == "home" && { id: "gallery" })}>
+        <div className='workshops-gallery'  {...(props.id === "home" && { id: "gallery" })}>
         <Swiper
         effect={'coverflow'}
         grabCursor={true}

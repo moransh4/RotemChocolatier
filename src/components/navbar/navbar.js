@@ -2,29 +2,29 @@ import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import './navbar.scss';
 import logo from './images/my-logo.jpg';
-import SubMenu from './SubMenu';
+// import SubMenu from './SubMenu';
 
 const Navbar = () => {
   const [showNavbar, setShowNavbar] = useState(false);
-  const [openMenueID , setOpenMenueID] = useState(null);
+  // const [openMenueID , setOpenMenueID] = useState(null);
 
   const handleShowNavbar = () => {
     setShowNavbar(!showNavbar);
   };
 
   const closeSubMenu  = () => {
-    setOpenMenueID(null);
+    // setOpenMenueID(null);
     handleShowNavbar();
   };
 
-  const OpenSubMenueHandler = (name) => {
-    if(openMenueID === name){
-      setOpenMenueID(null);
-    }
-    else{
-      setOpenMenueID(name);
-    }
-  };
+  // const OpenSubMenueHandler = (name) => {
+  //   if(openMenueID === name){
+  //     setOpenMenueID(null);
+  //   }
+  //   else{
+  //     setOpenMenueID(name);
+  //   }
+  // };
 
   let delay = ( function() {
     var timer = 0;
@@ -35,7 +35,7 @@ const Navbar = () => {
   })();
 
   const  scrollToSection = async (sectionId) => {
-    setOpenMenueID(null);
+    // setOpenMenueID(null);
     handleShowNavbar();
     const element = document.getElementById(sectionId);
 

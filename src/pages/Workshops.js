@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import Footer from '../components/footer/Footer.js';
 import Workshop from '../components/workshop/Workshop.js'

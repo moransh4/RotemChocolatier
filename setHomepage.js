@@ -5,7 +5,7 @@ const packageJson = require('./package.json');
 // Set the homepage field dynamically based on environment
 if (process.env.NODE_ENV === 'development') {
   packageJson.homepage = 'http://localhost:3000';
-}else if (process.env.NODE_ENV === 'qa') {
+}else if (process.env.NODE_ENV === 'test') {
     packageJson.homepage = 'https://moransh4.github.io/RotemChocolatier';
 } else if (process.env.NODE_ENV === 'production') {
   packageJson.homepage = 'https://rotem-chocolate.co.il';
